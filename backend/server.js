@@ -18,7 +18,7 @@ mongoose.connect(process.env.MONGO_URI)
 
 // Topic Routes
 app.use('/api/topics', require('./routes/topicRoutes'));
-
+app.use('/api/quizzes', require('./routes/quizRoutes'));
 // status check route
 app.get('/', (req, res) => {
   res.json({ message: 'API is running' });
