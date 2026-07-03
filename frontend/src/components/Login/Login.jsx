@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Login.css";
+import { Link } from 'react-router-dom'
 
 export default function Login() {
   const [formData, setFormData] = useState({
@@ -60,7 +61,7 @@ export default function Login() {
         <div className="login-footer">
           <a href="/">Forgot Password?</a>
           <p>
-            Don't have an account? <a href="/signup">Sign Up</a>
+            Don't have an account? <Link to="/register"><a href="/signup">Sign Up</a></Link>
           </p>
         </div>
       </div>
